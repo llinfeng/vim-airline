@@ -14,20 +14,6 @@ let s:buf_min_count = get(g:, 'airline#extensions#tabline#buffer_min_count', 0)
 let s:tab_min_count = get(g:, 'airline#extensions#tabline#tab_min_count', 0)
 let s:spc = g:airline_symbols.space
 
-let s:number_map = &encoding == 'utf-8'
-      \ ? {
-      \ '0': '⁰',
-      \ '1': '¹',
-      \ '2': '²',
-      \ '3': '³',
-      \ '4': '⁴',
-      \ '5': '⁵',
-      \ '6': '⁶',
-      \ '7': '⁷',
-      \ '8': '⁸',
-      \ '9': '⁹'
-      \ }
-      \ : {}
 
 function! airline#extensions#tabline#init(ext)
   if has('gui_running')
