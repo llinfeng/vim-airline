@@ -122,6 +122,7 @@ function! airline#extensions#load()
   autocmd CursorMoved * call <sid>sync_active_winnr()
 
   call airline#extensions#quickfix#init(s:ext)
+  call airline#extensions#pandoc#init(s:ext)
 
   if get(g:, 'loaded_unite', 0)
     call airline#extensions#unite#init(s:ext)
