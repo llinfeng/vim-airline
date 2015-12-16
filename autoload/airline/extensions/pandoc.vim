@@ -15,7 +15,7 @@ else
  let v:statusmsg = s:old_status
  end
  call setpos('.', position)
- return s:word_count
+ return s:word_count 
 end
 endfunction
 
